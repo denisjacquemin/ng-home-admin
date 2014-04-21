@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title ng-bind="$state.current.name + ' - ui-router'">ui-router</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <header id="global-header" class="navbar">
+        <a class="ghost-logo" href="/" data-off-canvas="left" title="/">
+            <span class="hidden">Ghost </span>
+        </a>
+        <nav id="global-nav" role="navigation">
+            <ul id="main-menu">
+
+                <li class="content active"><a href="/ghost/">Content</a></li>
+
+                <li class="editor"><a href="/ghost/editor/">New Post</a></li>
+
+                <li class="settings"><a href="/ghost/settings/">Settings</a></li>
+
+
+                <li id="usermenu" class="usermenu subnav">
+                    <a href="#" data-toggle="ul" class="dropdown">
+                        <img class="avatar" src="//www.gravatar.com/avatar/56c449f1a408dba893793094599f7fb5?d=404" alt="Avatar">
+                        <span class="name">Denis Jacquemin</span>
+                    </a>
+                    <ul class="overlay" style="display: none;">
+                        <li class="usermenu-profile"><a href="/ghost/settings/user/">Your Profile</a></li>
+                        <li class="divider"></li>
+                        <li class="usermenu-help"><a href="http://ghost.org/forum/">Help / Support</a></li>
+                        <li class="divider"></li>
+                        <li class="usermenu-signout"><a href="/ghost/signout/">Sign Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>

@@ -26,8 +26,8 @@ app.configure('development', function () {
 });
 
 
-app.get('/', routes.home);
-app.get('/*', routes.index);
+app.get('/', routes.index);
+
 
 
 var port = Number(process.env.PORT || 5000);
